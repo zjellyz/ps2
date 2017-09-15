@@ -13,11 +13,7 @@ public class MyInteger {
 	}
 
 	public boolean isEven() {
-		if (getiValue() % 2 == 0) {
-			return true;
-		} else {
-			return false;
-		}
+		return (iValue % 2 == 0 ? true : false);
 	}
 
 	public boolean isOdd() {
