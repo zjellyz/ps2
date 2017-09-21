@@ -64,8 +64,8 @@ public class MyInteger {
 		}
 	}
 
-	public boolean isEquals(MyInteger iValue) {
-		if (this.iValue == getiValue()) {
+	public boolean isEquals(MyInteger myInt) {
+		if (this.iValue == myInt.getiValue()) {
 			return true;
 		} else {
 			return false;

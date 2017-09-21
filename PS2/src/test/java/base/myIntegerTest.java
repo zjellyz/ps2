@@ -28,19 +28,19 @@ public class myIntegerTest {
 	@Test
 	public void testEvenInt() {
 		MyInteger myInt = new MyInteger(4);
-		assertTrue(myInt.isEven(4));
+		assertTrue(myInt.isEven());
 	}
 
 	@Test
 	public void testOddInt() {
 		MyInteger myInt = new MyInteger(5);
-		assertTrue(myInt.isOdd(5));
+		assertTrue(myInt.isOdd());
 	}
 
 	@Test
 	public void testPrimeInt() {
 		MyInteger myInt = new MyInteger(3);
-		assertTrue(myInt.isPrime(3));
+		assertTrue(myInt.isPrime());
 	}
 
 	@Test
@@ -70,7 +70,9 @@ public class myIntegerTest {
 	@Test
 	public void testEqualMyInteger() {
 		MyInteger myInt = new MyInteger(4);
-		assertTrue(myInt.isEquals(4));
+		MyInteger myInt2 = new MyInteger(4);
+
+		assertTrue(myInt.isEquals(myInt2));
 	}
 
 }
